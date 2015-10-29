@@ -37,8 +37,6 @@ if len(mxd_list) > 0:
             #Iterate through the ArcMap Document layers...
             print 'got mxd mapping'
             datafs = arcpy.mapping.ListDataFrames(mxd)
-            for dataf in datafs:
-                print dataf.name
             for df in datafs: #arcpy.mapping.ListDataFrames(mxd):
                 dataframeName = df.name
                 print dataframeName
